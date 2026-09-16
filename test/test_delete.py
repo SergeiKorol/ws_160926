@@ -1,7 +1,9 @@
 import requests
 
 
+
 def test_add():
+    """смотри этот тест"""
     body = {"title": "Задача1", "completed": False}
     response = requests.post("http://5.101.50.9:8014/", json=body)
     response_body = response.json()
