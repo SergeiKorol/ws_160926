@@ -1,7 +1,7 @@
 import requests
 
-# создать задачу, изменить и проверить что ИД не поменялся
 def add_tasks():
+    """ формирует новую задачу, изменяет и проверяет что ИД не поменялся"""
     url = "http://5.101.50.9:8014/"
     body = {"title":"задание на сегодня","completed":False}
     response = requests.post(url, json = body)
